@@ -10,4 +10,5 @@
 - Postgresql 
 - Flower
 
+docs: http://87.228.8.218/docs
 
