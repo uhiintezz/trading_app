@@ -19,7 +19,6 @@ RUN chmod a+x docker/celery.sh
 
 
 # Проверка существования и прав доступа к файлам
-RUN ls -l docker/
 
 
 #WORKDIR src
