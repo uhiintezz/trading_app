@@ -47,21 +47,7 @@ services:
       - redis
     volumes:
       - .:/fastapi_app
-
-  flower:
-    build:
-      context: .
-    container_name: flower_app
-    env_file:
-      - .env-non-dev
-    command: ["/fastapi_app/docker/celery.sh", "flower"]
-    depends_on:
-      - redis
-      - celery
-    ports:
-      - 8888:5555
-    volumes:
-      - .:/fastapi_app
+      
 volumes:
   db_data:
   redis_data:
